@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan — Game Developer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">Ethan</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Game Developer</p>
+      <h1 class="hero-title">Hi, I'm Ethan.</h1>
+      <p class="hero-sub">
+        I design and build games — solo and with teams. I care about feel,
+        polish, and the small details that make players smile.
+      </p>
+      <div class="hero-actions">
+        <a href="#games" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container two-col">
+      <div class="about-text">
+        <span class="section-label">About me</span>
+        <h2>A little about me</h2>
+        <p>
+          I'm a game developer with a passion for crafting experiences that
+          are easy to pick up but hard to put down. Whether I'm flying solo
+          or collaborating with a team, I focus on tight gameplay loops,
+          expressive feedback, and code that's easy to iterate on.
+        </p>
+        <p>
+          When I'm not making games I'm playing them — usually dissecting
+          what makes them tick.
+        </p>
+        <div class="skills">
+          <span class="skill-tag">Unity</span>
+          <span class="skill-tag">C#</span>
+          <span class="skill-tag">Godot</span>
+          <span class="skill-tag">GDScript</span>
+          <span class="skill-tag">Game Design</span>
+          <span class="skill-tag">Level Design</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div class="about-img-wrap">
+        <div class="about-img-placeholder">
+          <span>Your photo here</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="section games">
+    <div class="container">
+      <span class="section-label">Portfolio</span>
+      <h2>Games I've made</h2>
+
+      <!-- Filters -->
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="solo">Solo</button>
+        <button class="filter-btn" data-filter="team">Team</button>
+      </div>
+
+      <div class="games-grid">
+
+        <!-- GAME CARD — duplicate & edit these -->
+        <article class="game-card" data-type="solo">
+          <div class="card-thumb placeholder-thumb">
+            <span>Screenshot</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-solo">Solo</span>
+              <span class="card-engine">Unity · C#</span>
+            </div>
+            <h3 class="card-title">Game Title One</h3>
+            <p class="card-desc">
+              A short description of what the game is about, the core
+              mechanic, and what made it interesting to build.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Play →</a>
+              <a href="#" class="card-link card-link-ghost">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card" data-type="team">
+          <div class="card-thumb placeholder-thumb">
+            <span>Screenshot</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-team">Team</span>
+              <span class="card-engine">Godot · GDScript</span>
+            </div>
+            <h3 class="card-title">Game Title Two</h3>
+            <p class="card-desc">
+              Describe the team project here — your role, the genre, any
+              notable features or challenges you tackled.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Play →</a>
+              <a href="#" class="card-link card-link-ghost">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card" data-type="solo">
+          <div class="card-thumb placeholder-thumb">
+            <span>Screenshot</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-solo">Solo</span>
+              <span class="card-engine">Unity · C#</span>
+            </div>
+            <h3 class="card-title">Game Title Three</h3>
+            <p class="card-desc">
+              Another solo project — maybe a game jam entry or a prototype
+              you built over a weekend.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Play →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card" data-type="team">
+          <div class="card-thumb placeholder-thumb">
+            <span>Screenshot</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="tag tag-team">Team</span>
+              <span class="card-engine">Unity · C#</span>
+            </div>
+            <h3 class="card-title">Game Title Four</h3>
+            <p class="card-desc">
+              A second team project. Mention the team size, your specific
+              contributions, and any cool systems you built.
+            </p>
+            <div class="card-links">
+              <a href="#" class="card-link">Play →</a>
+              <a href="#" class="card-link card-link-ghost">Source</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-inner">
+      <span class="section-label">Say hello</span>
+      <h2>Let's connect</h2>
+      <p>Whether you want to collaborate, hire, or just talk games — I'm around.</p>
+      <a href="mailto:your@email.com" class="btn btn-primary">your@email.com</a>
+      <div class="social-links">
+        <a href="#" class="social-link">GitHub</a>
+        <a href="#" class="social-link">itch.io</a>
+        <a href="#" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Ethan · Built with care</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
