@@ -19,21 +19,20 @@ The entire UI lives in one file, [index.html](index.html), structured as four an
 
 ### CSS design tokens
 
-All colors, radius, and shadow values are CSS custom properties defined at the top of [css/styles.css](css/styles.css) in `:root`. Modify those variables first before touching individual rules.
+All colors, radius, and shadow values are CSS custom properties defined at the top of [css/styles.css](css/styles.css) in `:root`. Modify those variables first before touching individual rules. Responsive breakpoints are at `768px` (collapses two-column layout, hides profile image) and `480px` (hides nav links, reduces section padding).
 
 ### Game cards
 
-Each game is an `<article class="game-card" data-type="solo|team">` in [index.html](index.html). To add a game, copy an existing card block and update the `data-type`, tags, title, description, thumbnail, and links. The card thumbnail is either a `<img>` inside `.card-thumb` or the `.placeholder-thumb` div.
+Each game is an `<article class="game-card" data-type="solo|team">` in [index.html](index.html). To add a game, copy an existing card block and update the `data-type`, tags, title, description, thumbnail, and links. The card thumbnail is either a `<img>` inside `.card-thumb` or the `.placeholder-thumb` div. Thumbnail images live in [images/](images/).
+
+The filter row currently has only **All** and **Team** buttons — there is no Solo button in the HTML yet, though `data-type="solo"` and `.tag-solo` CSS are ready for use.
 
 ### JavaScript
 
 [js/main.js](js/main.js) has exactly two responsibilities:
 1. **Filter buttons** — toggling `.hidden` on `.game-card` elements based on `data-type`
-2. **Scroll fade-in** — an `IntersectionObserver` that adds `.visible` to `.fade-in` elements when they enter the viewport
+2. **Scroll fade-in** — dynamically adds `.fade-in` to `.game-card`, `.about-text`, and `.contact-inner`, then uses an `IntersectionObserver` to add `.visible` when each enters the viewport
 
-### Placeholders still in the template
+### Remaining placeholder
 
-The following placeholder content needs to be replaced before publishing:
-- Game titles, descriptions, and links in the games grid (`index.html` lines 91–173)
-- Email address (`your@email.com`) and social links in the Contact section
-- The profile photo (`about-img-placeholder` div)
+The profile photo in the About section (`about-img-placeholder` div) still needs a real image.
