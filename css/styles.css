@@ -246,6 +246,7 @@ body {
 .tag-team { background: #f3e8ff; color: var(--team); }
 
 .card-title { font-size: 1.05rem; font-weight: 600; letter-spacing: -.01em; }
+.card-role  { font-size: .78rem; font-weight: 600; color: var(--accent); letter-spacing: .04em; text-transform: uppercase; }
 .card-desc  { font-size: .875rem; color: var(--muted); flex: 1; }
 
 .card-links { display: flex; gap: 14px; margin-top: 4px; }
